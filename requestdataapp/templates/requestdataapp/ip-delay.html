@@ -1,0 +1,11 @@
+{% extends "requestdataapp/base.html" %}
+
+{% block title %}
+    Warning: you are exceeding limits of using this site!
+{% endblock %}}
+
+{% block body %}
+    <h1>Warning: you are exceeding limits of using this site!</h1>
+    <h2>Your ip is {{ ip }}</h2>
+    <h2>Your requests count {{ count }}</h2>
+{% endblock %}

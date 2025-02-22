@@ -1,0 +1,48 @@
+{% extends "shopapp/base.html" %}
+{% load cache %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <div>
+        Time running: {{ time_running }}
+    </div>
+    <h1>{{ header }}</h1>
+
+    <div>
+        <h2>{{ products|length }} product{{ products|pluralize }} available for orders:</h2>
+        <ul>
+            {% for product in products|dictsort:"price" %}
+            <li>{{ product.name }} for {{ product.price }} rub.
+                {% if product.qty %}
+                    available: {{ product.qty }}
+                {% else %}
+                    not available now
+                {% endif %}
+            </li>
+            {% empty %}
+            No products here
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <strong>
+            You have {{ items }} cherr{{ items|pluralize:"y,ies" }}
+        </strong>
+    </div>
+
+    <div>
+        {% now "H:i" %}
+    </div>
+
+    {% cache 100 weekday %}
+    <div>
+        {% now "l" as current_weekday %}
+        Today is {{ current_weekday }}
+    </div>
+    {% endcache %}
+
+{% endblock %}

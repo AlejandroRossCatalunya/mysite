@@ -1,0 +1,114 @@
+[
+  {
+    "model": "shopapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Samsung S23",
+      "color": "green",
+      "description": "Благодаря аккумулятору 4700 мАч и энергоэффективному процессору Samsung Galaxy S23+ демонстрирует практически эталонную автономность по сравнению с любыми другими Android-девайсами.\r\nКроме того, быстрая 45-ваттная зарядка позволит пополнить заряд батареи до 100% менее, чем за час.",
+      "price": "100000",
+      "discount": 25,
+      "created_by": 1,
+      "created_at": "2023-03-04T20:13:40.230Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Samsung S22",
+      "color": "black",
+      "description": "Утонченные лицевые панели гармонично сочетаются с изысканным корпусом. Роскошный вид дополняет лаконичная система линейных камер. Да, он просто великолепен!",
+      "price": "70000",
+      "discount": 15,
+      "created_by": 1,
+      "created_at": "2023-03-05T07:25:52.570Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Samsung A73",
+      "color": "grey",
+      "description": "Galaxy A73 5G — сочетание изящного дизайна и повышенной производительности. Сверхтонкая рамка, яркий контрастный дисплей и невероятные возможности камеры с функцией Ambient Edge сочетаются с увеличенным временем работы от аккумулятора.",
+      "price": "45000",
+      "discount": 10,
+      "created_by": 1,
+      "created_at": "2023-03-05T07:27:09.925Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Samsung A03",
+      "color": "blue",
+      "description": "Galaxy A03 сочетает классический выдержанный стиль и удобство использования. Оригинальная текстура корпуса обладает повышенной устойчивостью к царапинам и обеспечивает надежный хват в руке. Выберите один из доступных цветов: черный, красный или синий.",
+      "price": "10000",
+      "discount": 0,
+      "created_by": 1,
+      "created_at": "2023-03-05T07:28:26.706Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Samsung A73",
+      "color": "blue",
+      "description": "",
+      "price": "75000",
+      "discount": 20,
+      "created_by": 1,
+      "created_at": "2023-03-15T04:36:06.896Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 6,
+    "fields": {
+      "name": "iPhone 11",
+      "color": "Синий",
+      "description": "Новая система двух камер. Аккумулятор на целый день без подзарядки.1 Самое прочное стекло и самый быстрый процессор iPhone.",
+      "price": "45500",
+      "discount": 5,
+      "created_by": 1,
+      "created_at": "2023-03-24T23:25:40.256Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "iPhone 14",
+      "color": "black",
+      "description": "New type of product from USA",
+      "price": "100000",
+      "discount": 20,
+      "created_by": 6,
+      "created_at": "2023-03-31T11:21:22.695Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "iPhone 10",
+      "color": "blue",
+      "description": "Old product",
+      "price": "50000",
+      "discount": 50,
+      "created_by": 6,
+      "created_at": "2023-04-06T06:28:41.103Z",
+      "archived": true
+    }
+  }
+]

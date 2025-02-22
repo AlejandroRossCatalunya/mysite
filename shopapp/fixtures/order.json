@@ -1,0 +1,61 @@
+[
+  {
+    "model": "shopapp.order",
+    "pk": 1,
+    "fields": {
+      "delivery_address": "Saint-Petersburg, Nevskiy av., 4",
+      "promocode": "SALESPB",
+      "created_at": "2023-03-05T11:55:08.040Z",
+      "user": 1,
+      "products": [
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 2,
+    "fields": {
+      "delivery_address": "Saint-Petersburg, Admiralteyskaya emb., 4",
+      "promocode": "SALESPB",
+      "created_at": "2023-03-05T11:57:56.989Z",
+      "user": 1,
+      "products": [
+        4,
+        3,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 3,
+    "fields": {
+      "delivery_address": "Saint-Petersburg, Admiralteyskaya emb., 4",
+      "promocode": "SALESPB",
+      "created_at": "2023-03-15T04:46:48.624Z",
+      "user": 1,
+      "products": [
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 4,
+    "fields": {
+      "delivery_address": "Saint-Petersburg, Admiralteyskaya emb., 4",
+      "promocode": "SALESPB",
+      "created_at": "2023-03-25T01:36:30.042Z",
+      "user": 1,
+      "products": [
+        3,
+        5,
+        2
+      ]
+    }
+  }
+]

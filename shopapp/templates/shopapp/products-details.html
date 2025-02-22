@@ -1,0 +1,62 @@
+{% extends "shopapp/base.html" %}
+
+{% load i18n %}
+
+{% block title %}
+    {% blocktranslate with k=product.pk %}Product № {{ k }}{% endblocktranslate %}
+{% endblock %}
+
+{% block body %}
+    <h1>{% translate 'Product' %} <strong>{{ product.name }}</strong></h1>
+    <div>
+        {% blocktranslate with desc=product.description price=product.price disc=product.discount arch=product.archived %}
+        <div>Description: <em>{{ desc }}</em></div>
+        <div>Price: {{ price }}</div>
+        <div>Discount: {{ disc }}</div>
+        <div>Archived: {{ arch }}</div>
+        {% endblocktranslate %}
+        {% if product.preview %}
+            <img src="{{ product.preview.url }}" alt="{{ product.preview.name }}">
+        {% endif %}
+        {% with image_count=product.image.all|length %}
+        {% blocktranslate %}
+        <h3>{{ image_count }} Image{{ image_count|pluralize:"s" }}</h3>
+        {% endblocktranslate %}
+        {% endwith %}
+        <div>
+            {% for image in product.image.all %}
+                <div>
+                    <img src="{{ img.image.url }}" alt="{{ img.image.name }}">
+                </div>
+            {% empty %}
+                <div>{% translate 'No images uploaded yet' %}</div>
+            {% endfor %}
+        </div>
+    </div>
+    {% if perms.shopapp.change_product %}
+    <div>
+        {% url 'shopapp:product_update' pk=product.pk as product_update_url %}
+        {% blocktranslate %}
+        <a href="{{ product_update_url }}">
+            >Update product
+        </a>
+        {% endblocktranslate %}
+    </div>
+    {% endif %}
+    <div>
+        {% url 'shopapp:product_delete' pk=product.pk as product_delete_url %}
+        {% blocktranslate %}
+        <a href="{{ product_delete_url }}">
+            >Archive product
+        </a>
+        {% endblocktranslate %}
+    </div>
+    <div>
+        {% url 'shopapp:products_list' as products_list_url %}
+        {% blocktranslate %}
+        <a href="{{ products_list_url }}">
+            >Back to products list
+        </a>
+        {% endblocktranslate %}
+    </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "shopapp/base.html" %}
+
+{% block title %}
+    Confirm delete order № {{ object.name }}
+{% endblock %}
+
+{% block body %}
+    <h1>Are you sure you want to delete order № {{ object.pk }}?</h1>
+    <br>
+    <div>
+        <div>Order by: {% firstof object.user.first_name object.user.username %}</div>
+        <div>Promocode: {{ object.promocode }}</div>
+        <div>Delivery Address: {{ object.delivery_address }}</div>
+    </div>
+    <div>
+        Products in order:
+        <ul>
+            {% for product in object.products.all %}
+            <li>{{ product.name }} for {{ product.price }} rub.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <br>
+    <div>
+        <a href="{% url 'shopapp:order_details' pk=object.pk %}">
+            >Back to order № {{ object.pk }}
+        </a>
+    </div>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+{% endblock %}

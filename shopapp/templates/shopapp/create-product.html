@@ -1,0 +1,26 @@
+{% extends "shopapp/base.html" %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate 'CrP' %}
+{% endblock %}
+
+{% block body %}
+    <h1>{% translate 'CrP' %}</h1>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% translate 'Create' %}</button>
+        </form>
+    </div>
+    <div>
+        {% url 'shopapp:products_list' as products_list_url %}
+        {% blocktranslate %}
+        <a href="{{ products_list_url }}">
+            >Back to products list
+        </a>
+        {% endblocktranslate %}
+    </div>
+{% endblock %}

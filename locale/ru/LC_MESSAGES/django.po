@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-17 08:20+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>=20) ? 1 : 2);\n"
+
+#: .\myauth\views.py:17
+msgid "welcome hello world!"
+msgstr "Привет, Мир!"
+
+#: .\myauth\views.py:22
+#, python-brace-format
+msgid "one products"
+msgid_plural "{count} products"
+msgstr[0] "{count} товар"
+msgstr[1] "{count} товара"
+msgstr[2] "{count} товаров"
+
+#: .\mysite\settings.py:132
+msgid "English"
+msgstr "Английский"
+
+#: .\mysite\settings.py:133
+msgid "Russian"
+msgstr "Русский"
+
+#: .\shopapp\forms.py:41
+msgid "Product form name"
+msgstr "Название"
+
+#: .\shopapp\forms.py:42
+msgid "Product form color"
+msgstr "Цвет"
+
+#: .\shopapp\forms.py:43
+msgid "Product form description"
+msgstr "Описание"
+
+#: .\shopapp\forms.py:44
+msgid "Product form price"
+msgstr "Цена"
+
+#: .\shopapp\forms.py:45
+msgid "Product form discount"
+msgstr "Скидка"
+
+#: .\shopapp\forms.py:46
+msgid "Product form preview"
+msgstr "Изображение"
+
+#: .\shopapp\forms.py:49
+msgid "Select files formfield"
+msgstr "Выбрать файлы"
+
+#: .\shopapp\models.py:15 .\shopapp\templates\shopapp\products-details.html:10
+msgid "Product"
+msgstr "Товар"
+
+#: .\shopapp\models.py:16
+msgid "Products"
+msgstr "Товары"
+
+#: .\shopapp\models.py:52
+msgid "Order"
+msgstr "Заказ"
+
+#: .\shopapp\models.py:53
+msgid "Orders"
+msgstr "Заказов"
+
+#: .\shopapp\templates\shopapp\create-product.html:6
+#: .\shopapp\templates\shopapp\create-product.html:10
+msgid "CrP"
+msgstr "Создать новый товар"
+
+#: .\shopapp\templates\shopapp\create-product.html:15
+msgid "Create"
+msgstr "Создать"
+
+#: .\shopapp\templates\shopapp\create-product.html:20
+#: .\shopapp\templates\shopapp\products-details.html:56
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(products_list_url)s\">\n"
+"            >Back to products list\n"
+"        </a>\n"
+"        "
+msgstr ""
+"\n"
+"        <a href=\"%(products_list_url)s\">\n"
+"            >Вернуться к списку товаров\n"
+"        </a>\n"
+"        "
+
+#: .\shopapp\templates\shopapp\products-details.html:6
+#, python-format
+#| msgid "Product № %(product.pk)s"
+msgid "Product № %(k)s"
+msgstr "Товар № %(k)s"
+
+#: .\shopapp\templates\shopapp\products-details.html:12
+#, python-format
+msgid ""
+"\n"
+"        <div>Description: <em>%(desc)s</em></div>\n"
+"        <div>Price: %(price)s</div>\n"
+"        <div>Discount: %(disc)s</div>\n"
+"        <div>Archived: %(arch)s</div>\n"
+"        "
+msgstr ""
+"\n"
+"        <div>Описание: <em>%(desc)s</em></div>\n"
+"        <div>Цена: %(price)s</div>\n"
+"        <div>Скидка: %(disc)s</div>\n"
+"        <div>Архивировано: %(arch)s</div>\n"
+"        "
+
+#: .\shopapp\templates\shopapp\products-details.html:22
+#, python-format
+#| msgid ""
+#| "\n"
+#| "        <h3>%(image_count)s Image%(image_count|pluralize:\"s\")s</h3>\n"
+#| "        "
+#| msgid_plural ""
+#| "\n"
+#| "        <h3>%(image_count)s Image%(image_count|pluralize:\"s\")s</h3>\n"
+#| "        "
+msgid ""
+"\n"
+"        <h3>%(image_count)s Image%(image_count|pluralize:\"s\")s</h3>\n"
+"        "
+msgid_plural ""
+"\n"
+"        <h3>%(image_count)s Image%(image_count|pluralize:\"s\")s</h3>\n"
+"        "
+msgstr[0] ""
+"\n"
+"        <h3>%(image_count)s Фотография</h3>\n"
+"        "
+msgstr[1] ""
+"\n"
+"        <h3>%(image_count)s Фотографии</h3>\n"
+"        "
+msgstr[2] ""
+"\n"
+"        <h3>%(image_count)s Фотографий</h3>\n"
+"        "
+
+
+#: .\shopapp\templates\shopapp\products-details.html:32
+msgid "No images uploaded yet"
+msgstr "Фотографии не загружены"
+
+#: .\shopapp\templates\shopapp\products-details.html:39
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(product_update_url)s\">\n"
+"            >Update product\n"
+"        </a>\n"
+"        "
+msgstr ""
+"\n"
+"        <a href=\"%(product_update_url)s\">\n"
+"            >Обновить товар\n"
+"        </a>\n"
+"        "
+
+#: .\shopapp\templates\shopapp\products-details.html:48
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(product_delete_url)s\">\n"
+"            >Archive product\n"
+"        </a>\n"
+"        "
+msgstr ""
+"\n"
+"        <a href=\"%(product_delete_url)s\">\n"
+"            >Архивировать товар\n"
+"        </a>\n"
+"        "
+
+#: .\shopapp\templates\shopapp\products-list.html:6
+#, python-format
+msgid "%(title)s"
+msgstr "%(title)s"
+
+#: .\shopapp\templates\shopapp\products-list.html:10
+msgid "PTitle"
+msgstr "Товары"
+
+#: .\shopapp\templates\shopapp\products-list.html:13
+msgid "NoProducts"
+msgstr "Товары отсутствуют"
+
+#: .\shopapp\templates\shopapp\products-list.html:16
+#, python-format
+msgid ""
+"\n"
+"                    There is only one product.\n"
+"                    "
+msgid_plural ""
+"\n"
+"                    There are %(products_count)s products.\n"
+"                "
+msgstr[0] ""
+"\n"
+"                    %(products_count)s товар.\n"
+"                "
+msgstr[1] ""
+"\n"
+"                    %(products_count)s товара.\n"
+"                "
+msgstr[2] ""
+"\n"
+"                    %(products_count)s товаров.\n"
+"                "
+
+#: .\shopapp\templates\shopapp\products-list.html:25
+msgctxt "product name"
+msgid "Name"
+msgstr "Имя"
+
+#: .\shopapp\templates\shopapp\products-list.html:27
+msgid "Color"
+msgstr "Цвет"
+
+#: .\shopapp\templates\shopapp\products-list.html:28
+msgid "Price"
+msgstr "Цена"
+
+#: .\shopapp\templates\shopapp\products-list.html:29
+msgid "no discount"
+msgstr "без скидки"
+
+#: .\shopapp\templates\shopapp\products-list.html:30
+msgid "Discount"
+msgstr "Скидка"
+
+#: .\shopapp\templates\shopapp\products-list.html:43
+msgid "Create a new product"
+msgstr "Создать новый товар"

@@ -1,0 +1,5 @@
+2025-02-19 19:28:06,937 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-02-19 19:28:30,525 [WARNING] django.request: Not Found: /
+2025-02-19 19:28:30,542 [WARNING] django.request: Not Found: /
+2025-02-19 19:28:30,752 [WARNING] django.request: Not Found: /favicon.ico
+2025-02-19 19:28:44,817 [INFO] shopapp.views: Rendering shop index

@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-17 08:20+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\myauth\views.py:17
+msgid "welcome hello world!"
+msgstr "Hello world!"
+
+#: .\myauth\views.py:22
+#, python-brace-format
+msgid "one products"
+msgid_plural "{count} products"
+msgstr[0] "One product"
+msgstr[1] "{count} products"
+
+#: .\mysite\settings.py:132
+msgid "English"
+msgstr "English"
+
+#: .\mysite\settings.py:133
+msgid "Russian"
+msgstr "Russian"
+
+#: .\shopapp\forms.py:41
+msgid "Product form name"
+msgstr "Name"
+
+#: .\shopapp\forms.py:42
+msgid "Product form color"
+msgstr "Color"
+
+#: .\shopapp\forms.py:43
+msgid "Product form description"
+msgstr "Description"
+
+#: .\shopapp\forms.py:44
+msgid "Product form price"
+msgstr "Price"
+
+#: .\shopapp\forms.py:45
+msgid "Product form discount"
+msgstr "Discount"
+
+#: .\shopapp\forms.py:46
+msgid "Product form preview"
+msgstr "Preview"
+
+#: .\shopapp\forms.py:49
+msgid "Select files formfield"
+msgstr "Select files"
+
+#: .\shopapp\models.py:15 .\shopapp\templates\shopapp\products-details.html:10
+msgid "Product"
+msgstr "Product"
+
+#: .\shopapp\models.py:16
+msgid "Products"
+msgstr "Products"
+
+#: .\shopapp\models.py:52
+msgid "Order"
+msgstr "Order"
+
+#: .\shopapp\models.py:53
+msgid "Orders"
+msgstr "Orders"
+
+#: .\shopapp\templates\shopapp\create-product.html:6
+#: .\shopapp\templates\shopapp\create-product.html:10
+msgid "CrP"
+msgstr "Create new product"
+
+#: .\shopapp\templates\shopapp\create-product.html:15
+msgid "Create"
+msgstr "Create"
+
+#: .\shopapp\templates\shopapp\create-product.html:20
+#: .\shopapp\templates\shopapp\products-details.html:56
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(products_list_url)s\">\n"
+"            >Back to products list\n"
+"        </a>\n"
+"        "
+msgstr ""
+"\n"
+"        <a href=\"%(products_list_url)s\">\n"
+"            >Back to products list\n"
+"        </a>\n"
+"        "
+
+#: .\shopapp\templates\shopapp\products-details.html:6
+#, python-format
+#| msgid "Product № %(product.pk)s"
+msgid "Product № %(k)s"
+msgstr "Product № %(k)s"
+
+#: .\shopapp\templates\shopapp\products-details.html:12
+#, python-format
+msgid ""
+"\n"
+"        <div>Description: <em>%(desc)s</em></div>\n"
+"        <div>Price: %(price)s</div>\n"
+"        <div>Discount: %(disc)s</div>\n"
+"        <div>Archived: %(arch)s</div>\n"
+"        "
+msgstr ""
+
+#: .\shopapp\templates\shopapp\products-details.html:22
+#, python-format
+msgid ""
+"\n"
+"        <h3>%(image_count)s Image%(image_count|pluralize:\"s\")s</h3>\n"
+"        "
+msgstr ""
+
+#: .\shopapp\templates\shopapp\products-details.html:32
+msgid "No images uploaded yet"
+msgstr "No images uploaded yet"
+
+#: .\shopapp\templates\shopapp\products-details.html:39
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(product_update_url)s\">\n"
+"            >Update product\n"
+"        </a>\n"
+"        "
+msgstr ""
+
+#: .\shopapp\templates\shopapp\products-details.html:48
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(product_delete_url)s\">\n"
+"            >Archive product\n"
+"        </a>\n"
+"        "
+msgstr ""
+
+#: .\shopapp\templates\shopapp\products-list.html:6
+#, python-format
+msgid "%(title)s"
+msgstr "%(title)s"
+
+#: .\shopapp\templates\shopapp\products-list.html:10
+msgid "PTitle"
+msgstr "Products"
+
+#: .\shopapp\templates\shopapp\products-list.html:13
+msgid "NoProducts"
+msgstr "No products here"
+
+#: .\shopapp\templates\shopapp\products-list.html:16
+#, python-format
+msgid ""
+"\n"
+"                    There is only one product.\n"
+"                    "
+msgid_plural ""
+"\n"
+"                    There are %(products_count)s products.\n"
+"                "
+msgstr[0] ""
+"\n"
+"                    There is only one product.\n"
+"                "
+msgstr[1] ""
+"\n"
+"                    There are %(products_count)s products.\n"
+"                "
+
+#: .\shopapp\templates\shopapp\products-list.html:25
+msgctxt "product name"
+msgid "Name"
+msgstr "Name"
+
+#: .\shopapp\templates\shopapp\products-list.html:27
+msgid "Color"
+msgstr "Color"
+
+#: .\shopapp\templates\shopapp\products-list.html:28
+msgid "Price"
+msgstr "Price"
+
+#: .\shopapp\templates\shopapp\products-list.html:29
+msgid "no discount"
+msgstr "no discount"
+
+#: .\shopapp\templates\shopapp\products-list.html:30
+msgid "Discount"
+msgstr "Discount"
+
+#: .\shopapp\templates\shopapp\products-list.html:43
+msgid "Create a new product"
+msgstr "Create a new product"
